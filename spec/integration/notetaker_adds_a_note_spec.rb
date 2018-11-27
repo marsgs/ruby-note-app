@@ -10,7 +10,7 @@ feature"Notetaker adds a note" do
         expect(page).to have_field("Text")
     end
     
-    scenario "Notetaker successfully creates a new article" do
+    scenario "Notetaker successfully creates a new article " do
          visit new_article_path
         expect(page).to have_content("New Article")
         fill_in "Title", with: "New Capybara Article"
